@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="styles.css" />
+<title>Reseller Application - MaRL</title>
+</head>
+<body>
+<header>
+<div class="site-header">
+<h1>MaRL</h1>
+<nav>
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="resellers.html">Resellers</a></li>
+<li><a href="partners.html">Car Wash Partners</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<h2>Become a Reseller</h2>
+<form id="resellerForm">
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone" required><br><br>
+
+<label for="territory">Territory:</label><br>
+<input type="text" id="territory" name="territory" required><br><br>
+
+<button type="submit">Apply to Resell</button>
+</form>
+</main>
+
+<script>
+document.getElementById('resellerForm').addEventListener('submit', function(e) {
+e.preventDefault();
+alert('Thank you for applying! We will contact you soon.');
+});
+</script>
+
+<footer>
+<p>&copy; 2025 MaRL. All rights reserved.</p>
+</footer>
+</body>
+</html>
